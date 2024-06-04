@@ -79,37 +79,37 @@
     <div>
         <h2>Formulário de Notas</h2>
         <form id="formNotas">
-            <label for="nome">Nome do Aluno:</label>
+            <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome">
             
-            <label for="matricula">Matrícula do Aluno:</label>
+            <label for="matricula">Matrícula:</label>
             <input type="text" id="matricula" name="matricula">
             
-            <label for="nota1">Nota 1º Bimestre:</label>
+            <label for="nota1">Nota do 1º Bimestre:</label>
             <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.01">
             
-            <label for="nota2">Nota 2º Bimestre:</label>
+            <label for="nota2">Nota do 2º Bimestre:</label>
             <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.01">
             
-            <button type="button" onclick="adicionarAluno()">Adicionar Aluno</button>
+            <button type="button" onclick="adicionarAluno()">Adicionar Nota</button>
         </form>
     </div>
 
     <div>
-        <h2>Tabela de Notas</h2>
+        <h2>Tabela das Notas</h2>
         <table id="tabelaNotas">
             <thead>
                 <tr>
                     <th>Nome do Aluno</th>
                     <th>Matrícula</th>
-                    <th>Nota 1º Bimestre</th>
-                    <th>Nota 2º Bimestre</th>
+                    <th>Nota do 1º Bimestre</th>
+                    <th>Nota do 2º Bimestre</th>
                     <th>Média</th>
-                    <th>Status</th>
+                    <th>Resultado</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Linhas serão adicionadas aqui -->
+                
             </tbody>
         </table>
     </div>
@@ -127,7 +127,7 @@
                 adicionarLinhaTabela(nome, matricula, nota1, nota2, media, status);
                 document.getElementById('formNotas').reset();
             } else {
-                alert("Por favor, preencha todos os campos corretamente e certifique-se de que as notas estão entre 0 e 10.");
+                alert("Prencha o que foi pedido");
             }
         }
 
